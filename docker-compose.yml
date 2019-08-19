@@ -1,0 +1,32 @@
+version: '3'
+services:
+  gitlab:
+    image: gitlab/gitlab-ce
+    container_name: gitlab
+    ports:
+      - 9090:80
+    volumes:
+      - ./gitlab/data:/var/opt/gitlab
+      - ./gitlab/log:/var/log/gitlab
+      - ./gitlab/config:/etc/gitlab
+ 
+  
+  facebook: 
+    image: python:3.7.4-alpine3.9
+    container_name: facebook
+    ports:    
+      - 5000:5000   
+    volumes: 
+      - ./facebook:/opt
+    tty: true
+    command: sh -c 'pip install flask; cd /opt; python3 app.py'
+
+  
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - 8080:8080
+    volumes:
+      - ./jenkins-data:/var/jenkins_home
+
