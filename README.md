@@ -53,7 +53,7 @@ Git[x] http://gitlab/root/facebook-flask <br/>
 -> avanced -> generete secret token <br/>
 **Build** <br/>
 ssh servers -> facebook
-source files -><p> **/*<br/><p/> 
+source files -> <code>**/*</code><br/>
 Exec command: docker restart facebook <br/>
 **Post-build actions** <br/>
 [x] slack notifications <br/>
