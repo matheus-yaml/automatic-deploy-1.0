@@ -1,5 +1,5 @@
-**INSTALAR DOCKER:** sudo curl –fsSL https://get.docker.com | bash <br/>
-**INSTALAR DOCKER-COMPOSE:** sudo apt-get install docker-compose <br/>
+**INSTALAR DOCKER:** <code>sudo curl –fsSL https://get.docker.com | bash</code> <br/>
+**INSTALAR DOCKER-COMPOSE:** <code>sudo apt-get install docker-compose</code> <br/>
 
 **Baixar imagens:** <br/>
 <code>docker pull gitlab/gitlab-ce;</code>  <br/>
