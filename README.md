@@ -61,10 +61,10 @@ Exec command: docker restart facebook
 override url: https://automatic-deploy.slack.com/services/hooks/jenkins-ci/ <br/>
 secret token: xxx <br/>
 
-**Configurar REPOSITÓRIO no gitlab para enviar o hook para o jenkis sempre que houver algum evento (push)**
-http://localhost:9090/root/facebook-flask/-/settings/integrations
-URL: http://localhost:9090/root/facebook-flask/-/settings/integrations
-Secret Token: Pegue no job do jenkins
+**Configurar REPOSITÓRIO no gitlab para enviar o hook para o jenkis sempre que houver algum evento (push)** <br/>
+http://localhost:9090/root/facebook-flask/-/settings/integrations <br/>
+URL: http://localhost:9090/root/facebook-flask/-/settings/integrations <br/>
+Secret Token: Pegue no job do jenkins <br/>
  
 
 
