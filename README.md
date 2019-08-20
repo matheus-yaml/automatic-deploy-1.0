@@ -2,35 +2,35 @@
 **INSTALAR DOCKER-COMPOSE:** sudo apt-get install docker-compose <br/>
 
 **Baixar imagens:** <br/>
-docker pull gitlab/gitlab-ce;  <br/>
-docker pull jenkins/jenkins:lts; <br/>
-docker pull python:3.7.4-alpine3.9 <br/>
+<code>docker pull gitlab/gitlab-ce;</code>  <br/>
+<code>docker pull jenkins/jenkins:lts;</code> <br/>
+<code>docker pull python:3.7.4-alpine3.9;</code> <br/>
   
 **Instanciar o gitlab:** <br/>
-docker-compose up -d gitlab <br/>
+<code>docker-compose up -d gitlab</code> <br/>
   
 **Instanciar o facebook:** <br/>
-docker-compose up -d facebook <br/>
+<code>docker-compose up -d facebook</code> <br/>
   
 **Configurar o gitlab:** <br/> 
 http://localhost/9090 <br/>
 criar projeto facebook-flask <br/>
   
 **Commitar os arquivos dentro de gitlab/app/facebook-flask para o GITLAB:** <br/>
-cd /home/$USER/automatic-deploy-1.0/gitlab/app/facebook-flask <br/>
-git init <br/>
-git remote add origin http://localhost:9090/root/facebook-flask <br/>
-git add . <br/>
-git commit -m 'redondinho' <br/>
-git push origin master <br/>
+<code>cd /home/$USER/automatic-deploy-1.0/gitlab/app/facebook-flask</code> <br/>
+<code>git init</code> <br/>
+<code>git remote add origin http://localhost:9090/root/facebook-flask</code> <br/>
+<code>git add .</code> <br/>
+<code>git commit -m 'redondinho'</code> <br/>
+<code>git push origin master</code> <br/>
   
 **Instanciar o jenkins:** <br/>
-docker-compose up -d jenkins <br/>
+<code>docker-compose up -d jenkins</code> <br/>
   
 **Configurar o jenkins:** <br/>
 http://localhost:8080 <br/>
 **Get token:** <br/>
-docker logs jenkins <br/>
+<code>docker logs jenkins</code> <br/>
 **Install suggested plugins** <br/>
 pass <br/>
 **Instalar seguintes plugins e reiniciar jenkins:** gitlab, slack notifications e publish over ssh  <br/>
