@@ -52,7 +52,8 @@ Git[x] http://gitlab/root/facebook-flask <br/>
 [x]Build when a change is pushed to GitLab. <br/>
 -> avanced -> generete secret token <br/>
 **Build** <br/>
-ssh servers -> facebook <br/><p>source files -> **/*<p/> <br/>
+ssh servers -> facebook
+<p>source files -> **/*<p/> <br/>
 Exec command: docker restart facebook
 **Post-build actions** <br/>
 [x] slack notifications <br/>
