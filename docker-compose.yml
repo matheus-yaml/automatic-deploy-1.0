@@ -15,7 +15,7 @@ services:
     image: python:3.7.4-alpine3.9
     container_name: facebook
     ports:    
-      - 5000:5000   
+      - 80:80   
     volumes: 
       - ./facebook:/opt
     tty: true
